@@ -1769,7 +1769,46 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      menu: [{
+        icon: 'home',
+        title: 'HOME'
+      }, {
+        icon: 'info',
+        title: 'ABOUT'
+      }, {
+        icon: 'warning',
+        title: 'CONTACT'
+      }]
+    };
+  }
+});
 
 /***/ }),
 
@@ -2903,7 +2942,67 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c(
+    "v-app",
+    { attrs: { id: "inspire" } },
+    [
+      _c(
+        "v-toolbar",
+        { attrs: { absolute: "" } },
+        [
+          _c("v-toolbar-title", [_vm._v("Travel Steps")]),
+          _vm._v(" "),
+          _c("v-spacer"),
+          _vm._v(" "),
+          _c(
+            "v-toolbar-items",
+            { staticClass: "hidden-sm-and-down" },
+            _vm._l(_vm.menu, function(item) {
+              return _c(
+                "v-btn",
+                { key: item.icon, attrs: { to: item.link, flat: "" } },
+                [_vm._v(_vm._s(item.title))]
+              )
+            }),
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-menu",
+            { staticClass: "hidden-md-and-up" },
+            [
+              _c("v-toolbar-side-icon", {
+                attrs: { slot: "activator" },
+                slot: "activator"
+              }),
+              _vm._v(" "),
+              _c(
+                "v-list",
+                _vm._l(_vm.menu, function(item) {
+                  return _c(
+                    "v-list-tile",
+                    { key: item.icon },
+                    [
+                      _c(
+                        "v-list-tile-content",
+                        [_c("v-list-tile-title", [_vm._v(_vm._s(item.title))])],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                }),
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
