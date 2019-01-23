@@ -27,7 +27,7 @@
       <v-divider></v-divider>
 
       <v-card-text class="white--text">
-        &copy;2018 — <strong>Vuetify</strong>
+        &copy;2019 — <strong>Travel Steps</strong>
       </v-card-text>
     </v-card>
   </v-footer>
