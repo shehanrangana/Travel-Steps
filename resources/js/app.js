@@ -2,11 +2,20 @@ require('./bootstrap');
 window.Vue = require('vue');
 
 import Vuetify from 'vuetify';
-Vue.use(Vuetify);
 import 'vuetify/dist/vuetify.min.css';
+Vue.use(Vuetify);
 
-Vue.component('home-component', require('./components/Home.vue').default);
+// route information for vue router
+import routes from './routes.js';
+
+// component file
+import App from './views/App';
+
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    render: h => h(App),
+    router: routes
 });
+
+export default app;

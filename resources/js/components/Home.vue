@@ -1,44 +1,6 @@
 <template>
-  <v-app id="inspire">
-
-    <!-- Toolbar -->
-    <v-toolbar absolute >
-      <v-toolbar-title>Travel Steps</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and-down">
-         <v-btn
-          v-for="item in menu"
-          :key="item.icon"
-          :to="item.link"
-          flat
-        >{{ item.title }}</v-btn>
-      </v-toolbar-items>
-      <v-menu class="hidden-md-and-up">
-        <v-toolbar-side-icon slot="activator"></v-toolbar-side-icon>
-        <v-list>
-          <v-list-tile v-for="item in menu" :key="item.icon">
-            <v-list-tile-content>
-              <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-             </v-list-tile-content>
-          </v-list-tile>   
-        </v-list>
-      </v-menu>
-    </v-toolbar>
-    
-  </v-app>
+  <div>
+    Home
+  </div>
 </template>
 
-<script>
-export default {
-  data () {
-    return {
-      menu: [
-        { icon: 'home', title: 'HOME'},
-        { icon: 'info', title: 'ABOUT'},
-        { icon: 'warning', title: 'CONTACT'}
-      ],
-    }
-  },
-  
-}
-</script>
