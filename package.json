@@ -21,6 +21,9 @@
         "vue-template-compiler": "^2.5.22"
     },
     "dependencies": {
+        "jquery": "^1.9.1",
+        "popper.js": "^1.14.6",
+        "vue-flux": "^5.1.9",
         "vue-router": "^3.0.2",
         "vuetify": "^1.4.2"
     }
